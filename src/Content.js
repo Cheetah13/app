@@ -19,6 +19,10 @@ function Content (props) {
       >
         {props.children}
       </ContentParagraph>
+      {
+        process.versions.electron
+        ? null : (<div><a href="download_files/wild-cats.dmg"><button style="border-radius: 20px;">Download the snap for linux</button></a><br /><br /><a href="download_files/wild-cats.exe"><button style="border-radius: 20px;">Download the exe for Windows</button></a><br /><br /><a href="download_files/wild-cats.dmg"><button style="border-radius: 20px;">Download the dmg for Mac!</button></a></div>)
+      }
       <Button
         secondary
         disabled={props.previous === 'disabled'}
