@@ -47,7 +47,7 @@ function handleClick (string, content) {
 function getContent () {
   axios
     .get(
-      'https://wildcats.salamsaidi.com/Content.json?rayyan_saidi_desktop_random=' +
+     'https://github.com/Cheetah13/app/raw/master/src/content.json?rayyan_saidi_desktop_random=' +
       Math.random()
     )
     .then((response) => {
